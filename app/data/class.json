@@ -1,0 +1,21 @@
+[
+{
+   "id": 1,
+   "class": "class 1",
+   "std": "1",
+   "students" :  [
+       {"name": "Ram", "roll_no": 1},
+       {"name": "Sham", "roll_no": 2}       
+   ]
+},
+{
+   "id": 2,
+   "class": "class 2",
+   "std": "2",
+   "students" : [
+       {"name": "John", "roll_no": 1},
+       {"name": "Doe", "roll_no": 2}       
+   ]
+}
+
+]

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main css  -->
+    <link rel="shortcut icon" href="./app/assets/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./external/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" type="text/js" href="./external/@fortawesome/fontawesome-free/js/all.min.js">
+    <link rel="stylesheet" href="./external/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./app/css/main.css">
+
+</head>
+
+<body ng-app="myapp" class="d-flex flex-column h-100" ng-controller="mainController">
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-dark" href="#">Features</a>
+            <a class="p-2 text-dark" href="#">Enterprise</a>
+            <a class="p-2 text-dark" href="#">Support</a>
+            <a class="p-2 text-dark" href="#">Pricing</a>
+        </nav>
+    </div>
+    <div class="container" >
+        <div class="row" ng-view></div>
+    </div>
+</body>
+
+
+<!-- External jquery packages -->
+<script src="./external/jquery/dist/jquery.min.js"></script>
+<script src="./external/jquery-ui-dist/jquery-ui.min.js"></script>
+<script src="./external/angular/angular.js"></script>
+<script src="./external/bootstrap/js/bootstrap.min.js"></script>
+<script src="./external/angular-route/angular-route.js"></script>
+<script src="./external/ngstorage/ngStorage.min.js"></script>
+<script src="./external/dirpagination/dirPagination.js"></script>
+
+<!-- Main Applications files -->
+<script src="app/js/app.js"></script>
+<script src="app/js/constants.js"></script>
+<script src="app/js/services/mainService.js"></script>
+<script src="app/js/services/classService.js"></script>
+<script src="app/js/services/userService.js"></script>
+
+<!-- Controller -->
+<script src="app/js/controllers/mainCtrl.js"></script>
+<script src="app/js/controllers/home/homeCtrl.js"></script>
+
+
+</html>

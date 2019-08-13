@@ -1,0 +1,45 @@
+<div class="col-4">
+    <form class="card p-2">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search class.">
+        </div>
+    </form>
+
+    <div class="list-group" ng-repeat="classRoom in classRooms">
+        <a data-target="" ng-click="getClassDetails(classRoom)" class="list-group-item list-group-item-action">
+            {{classRoom.class}}
+        </a>
+    </div>
+</div>
+<div class="col-8">
+    <div ng-show="classDataObjActive">
+        <p>select class.</p>
+    </div>
+
+    <div ng-hide="classDataObjActive">
+        <h4>{{classDataObj.class}}</h4>
+        <form class="card p-2">
+            <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search student.">
+            <!-- <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary">Redeem</button>
+            </div> -->
+            </div>
+        </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Roll No</th>
+                    <th scope="col">Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="student in classDataObj.students">
+                    <td>{{student.name}}</td>
+                    <td>{{student.roll_no}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
